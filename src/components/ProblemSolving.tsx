@@ -19,7 +19,7 @@ export default function ProblemSolving() {
       stat: "Problem Set Practice",
       description: "Strengthening Algorithms",
       link: "https://cses.fi/user/431300",
-      icon: "🧠", 
+      icon: "🧠",
     },
   ];
 
@@ -43,8 +43,10 @@ export default function ProblemSolving() {
                   hover:shadow-lg
                   hover:border-white
                   cursor-pointer
+                  group
                 "
               >
+                {/* HEADER */}
                 <div className="flex items-center gap-3 mb-4">
                   {profile.icon.startsWith("/") ? (
                     <img
@@ -61,35 +63,26 @@ export default function ProblemSolving() {
                   </h3>
                 </div>
 
+                {/* BADGE */}
                 <div className="mb-3">
-                  <span
-                    className="
-                      inline-block
-                      px-3 py-1
-                      text-sm
-                      font-medium
-                      rounded-full
-                      bg-gray-800
-                      border border-gray-700
-                    "
-                  >
+                  <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-gray-800 border border-gray-700">
                     {profile.stat}
                   </span>
                 </div>
 
+                {/* DESCRIPTION */}
                 <p className="text-gray-400 mb-4">
                   {profile.description}
                 </p>
 
-                {profile.link !== "#" && (
-                  <p className="text-blue-400 text-sm">
-                    Click to view profile →
-                  </p>
-                )}
+                {/* CTA */}
+                <p className="text-blue-400 text-sm group-hover:text-blue-300 transition">
+                  View profile →
+                </p>
               </div>
             );
 
-            return profile.link !== "#" ? (
+            return (
               <a
                 key={profile.platform}
                 href={profile.link}
@@ -99,8 +92,6 @@ export default function ProblemSolving() {
               >
                 {Card}
               </a>
-            ) : (
-              <div key={profile.platform}>{Card}</div>
             );
           })}
         </div>
