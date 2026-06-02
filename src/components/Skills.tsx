@@ -1,8 +1,8 @@
 export default function Skills() {
   const skills = {
-    Languages: ["C", "C++", "Python"],
-    "Core CS" : ["Data Structures", "Algorithms", "OOP"],
-    Frontend: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"],
+    Languages: ["C", "C++", "Python", "JavaScript"],
+    "Core CS": ["Data Structures", "Algorithms", "OOP"],
+    Frontend: ["HTML", "CSS", "React", "Next.js", "Tailwind CSS"],
     Tools: ["Git", "GitHub", "VS Code"],
   };
 
@@ -17,7 +17,15 @@ export default function Skills() {
           {Object.entries(skills).map(([category, items]) => (
             <div
               key={category}
-              className="border border-gray-700 rounded-xl p-6"
+              className="
+                border border-gray-700
+                rounded-xl p-6
+                bg-zinc-900/50
+                transition-all duration-300
+                hover:-translate-y-2
+                hover:shadow-lg
+                hover:border-white
+              "
             >
               <h3 className="text-2xl font-semibold mb-4">
                 {category}
@@ -27,7 +35,15 @@ export default function Skills() {
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-gray-800 px-3 py-1 rounded-full text-sm"
+                    className="
+                      bg-gray-800
+                      px-3 py-1
+                      rounded-full
+                      text-sm
+                      transition
+                      hover:bg-gray-700
+                      hover:scale-105
+                    "
                   >
                     {skill}
                   </span>
