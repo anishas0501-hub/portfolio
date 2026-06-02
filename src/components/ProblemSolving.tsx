@@ -18,8 +18,8 @@ export default function ProblemSolving() {
       platform: "CSES",
       stat: "Problem Set Practice",
       description: "Strengthening Algorithms",
-      link: "#",
-      icon: "🧠", // optional
+      link: "https://cses.fi/user/431300",
+      icon: "🧠", 
     },
   ];
 
