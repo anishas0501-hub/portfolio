@@ -1,37 +1,43 @@
 export default function Hero() {
-  return ( 
-    <section className="min-h-screen pt-24 bg-black text-white flex items-center justify-center px-6">
-      <div className="text-center max-w-3xl">
-        
-        <p className="text-gray-400 mb-4 text-lg">
-          Hello, my name is
+  return (
+    <section className="min-h-screen flex items-center justify-center px-6 text-white pt-24">
+      <div className="max-w-3xl text-center">
+
+        {/* Greeting */}
+        <p className="text-gray-400 mb-4">
+          Hey, I’m
         </p>
 
-        <h1 className="text-6xl md:text-7xl font-bold mb-6">
+        {/* Name (styled) */}
+        <h1
+          className="
+            text-6xl md:text-7xl
+            font-light
+            tracking-tight
+            mb-6
+            text-white
+          "
+          style={{
+            fontFamily: "serif",
+            letterSpacing: "-0.02em",
+          }}
+        >
           Anisha
         </h1>
 
-        <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-          Aspiring Software Engineer & Web Developer
+        {/* Soft identity line */}
+        <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
+          I build and learn web development, one project at a time
         </h2>
 
-        <p className="text-gray-500 text-lg leading-relaxed">
-          I love building projects, solving DSA problems,
-          and learning modern web development while growing
-          as a developer every day.
+        {/* Description */}
+        <p className="text-gray-400 leading-relaxed mb-10 max-w-2xl mx-auto">
+          I’m a computer science student exploring software development
+          through hands-on projects and problem solving. I’m currently
+          growing step by step as I learn to build better, cleaner web apps.
         </p>
-
-        <div className="flex justify-center gap-4 mt-8">
-          <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition">
-            View Projects
-          </button>
-
-          <button className="border border-gray-500 px-6 py-3 rounded-full hover:border-white transition">
-            Contact Me
-          </button>
-        </div>
 
       </div>
     </section>
   );
-} 
+}
