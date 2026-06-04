@@ -5,7 +5,7 @@ export default function Hero() {
 
         {/* Greeting */}
         <p className="text-gray-400 mb-4">
-          Hey, I’m
+          Hello, I’m
         </p>
 
         {/* Name (styled) */}
@@ -22,21 +22,38 @@ export default function Hero() {
             letterSpacing: "-0.02em",
           }}
         >
-          Anisha
+          Anisha Sadhukhan
         </h1>
 
         {/* Soft identity line */}
         <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-          I build and learn web development, one project at a time
+          Frontend Developer • Learning by Building • Problem Solver
         </h2>
 
         {/* Description */}
         <p className="text-gray-400 leading-relaxed mb-10 max-w-2xl mx-auto">
-          I’m a computer science student exploring software development
-          through hands-on projects and problem solving. I’m currently
-          growing step by step as I learn to build better, cleaner web apps.
+          I'm a computer science student passionate about web development, problem solving, and building projects that help me grow as a developer.
         </p>
-
+        <a
+          href="/AnishaResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-flex items-center gap-2
+            px-8 py-4
+            rounded-xl
+            border border-zinc-700
+            bg-zinc-900
+            text-white
+            font-semibold
+            hover:bg-zinc-800
+            hover:border-zinc-500
+            hover:scale-105
+            transition-all duration-300
+          "
+        >
+          View Resume
+        </a>
       </div>
     </section>
   );
