@@ -9,7 +9,15 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main
+      className="
+        min-h-screen
+        bg-gradient-to-b
+        from-black
+        via-[#040d18]
+        to-[#031313]
+      "
+    >
       <Navbar />
       <Hero />
       <About />
@@ -20,4 +28,4 @@ export default function Home() {
       <Footer />
     </main>
   );
-} 
+}
