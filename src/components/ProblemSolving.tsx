@@ -9,17 +9,24 @@ export default function ProblemSolving() {
     },
     {
       platform: "CodeChef",
-      stat: "2★ Competitive Programmer",
+      stat: "2★",
       description: "Regular Contest Participant",
       link: "https://www.codechef.com/users/witty_kitty_11",
       icon: "/icons/codechef.png",
+    },
+    {
+      platform: "Codeforces",
+      stat: "Competitive Programming",
+      description: "Regular Practice",
+      link: "https://codeforces.com/profile/wittykitty11",
+      icon: "/icons/codeforces.png",
     },
     {
       platform: "CSES",
       stat: "Problem Set Practice",
       description: "Strengthening Algorithms",
       link: "https://cses.fi/user/431300",
-      icon: "🧠",
+      icon: "/icons/cseslogo.jpg",
     },
   ];
 
@@ -30,7 +37,7 @@ export default function ProblemSolving() {
           Problem Solving
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {profiles.map((profile) => {
             const Card = (
               <div
@@ -44,6 +51,9 @@ export default function ProblemSolving() {
                   hover:border-white
                   cursor-pointer
                   group
+                  h-full
+                  flex
+                  flex-col
                 "
               >
                 {/* HEADER */}
@@ -71,7 +81,7 @@ export default function ProblemSolving() {
                 </div>
 
                 {/* DESCRIPTION */}
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 mb-4 flex-grow">
                   {profile.description}
                 </p>
 
