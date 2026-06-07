@@ -27,3 +27,30 @@ body {
   border-radius: 9999px;
   animation: twinkle 3s infinite ease-in-out;
 }
+@keyframes floatStar {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(3px, -2px);
+  }
+
+  50% {
+    transform: translate(-2px, 2px);
+  }
+
+  75% {
+    transform: translate(2px, 1px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.floating-star {
+  animation:
+    twinkle 3s infinite ease-in-out,
+    floatStar 8s infinite ease-in-out;
+}

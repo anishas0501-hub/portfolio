@@ -1,3 +1,5 @@
+"use client";
+import Tilt from "react-parallax-tilt";
 export default function Projects() {
   const projects = [
     {
@@ -67,8 +69,13 @@ export default function Projects() {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div
+            <Tilt
               key={project.title}
+              tiltMaxAngleX={8}
+              tiltMaxAngleY={8}
+              perspective={1000}
+              transitionSpeed={1500}
+              glareEnable={false}
               className="
                 border border-gray-700
                 rounded-xl
@@ -173,10 +180,10 @@ export default function Projects() {
                   )}
                 </div>
               </div>
-            </div>
+            </Tilt>
           ))}
         </div>
       </div>
     </section>
   );
-}
+} 

@@ -6,6 +6,8 @@ import Projects from "@/components/Projects";
 import ProblemSolving from "@/components/ProblemSolving";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Spotlight from "@/components/Spotlight";
+
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
         to-[#031313]
       "
     >
+      <Spotlight />
       <Navbar />
       <Hero />
       <About />

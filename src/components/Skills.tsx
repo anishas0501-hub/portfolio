@@ -1,9 +1,47 @@
 export default function Skills() {
   const skills = {
-    Languages: ["C", "C++", "Python", "JavaScript"],
-    "Core CS": ["Data Structures", "Algorithms", "OOP"],
-    Frontend: ["HTML", "CSS", "React", "Next.js", "Tailwind CSS"],
-    Tools: ["Git", "GitHub", "VS Code"],
+    Languages: [
+      "C",
+      "C++",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Kotlin",
+    ],
+
+    "Core CS": [
+      "Data Structures",
+      "Algorithms",
+      "Object-Oriented Programming",
+    ],
+
+    Frontend: [
+      "HTML",
+      "CSS",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+    ],
+
+    "UI/UX": [
+      "Figma",
+      "Responsive Design",
+    ],
+
+    "Mobile Development": [
+      "Android Studio",
+      "Jetpack Compose",
+    ],
+
+    Tools: [
+      "Git",
+      "GitHub",
+      "VS Code",
+    ],
+    "Problem Solving": [
+      "DSA",
+      "Competitive Programming",
+    ],
   };
 
   return (
