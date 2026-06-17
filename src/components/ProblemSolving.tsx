@@ -2,7 +2,7 @@ export default function ProblemSolving() {
   const profiles = [
     {
       platform: "LeetCode",
-      stat: "190+ Problems Solved",
+      stat: "200+ Problems Solved",
       description: "Consistent Problem Practice",
       link: "https://leetcode.com/u/witty_kitty_11/",
       icon: "/icons/leetcode.png",
