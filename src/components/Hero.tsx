@@ -1,3 +1,4 @@
+import Image from "next/image";
 import MagneticButton from "./MagneticButton";
 
 export default function Hero() {
@@ -291,7 +292,26 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-3xl text-center">
-
+        <div className="flex justify-center mb-8">
+          <div className="relative">
+            <Image
+              src="/profile.png"
+              alt="Anisha Sadhukhan"
+              width={140}
+              height={140}
+              className="
+                rounded-full
+                object-cover
+                border border-white/15
+                ring-4 ring-white/5
+                shadow-lg
+                transition-transform duration-300
+                hover:scale-105
+              "
+              priority
+            />
+          </div>
+        </div>
         {/* Greeting */}
         <p className="text-gray-400 mb-4">
           Hello, I’m
