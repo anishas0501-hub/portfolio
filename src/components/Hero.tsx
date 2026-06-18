@@ -316,14 +316,21 @@ export default function Hero() {
 
         {/* Tagline */}
         <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-          Frontend Developer • Learning by Building • Problem Solver
+          CSE Student • Problem Solver • Learning by Building
         </h2>
 
         {/* Description */}
         <p className="text-gray-400 leading-relaxed mb-10 max-w-2xl mx-auto">
-          I'm a computer science student passionate about web development,
-          problem solving, and building projects that help me grow as a developer.
+          Second-year Computer Science student focused on Data Structures &
+          Algorithms, competitive programming, and modern web development. Loves to work with new technologies!
         </p>
+
+        <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-gray-400">
+          <span>250+ LeetCode</span>
+          <span>2★ CodeChef</span>
+          <span>3+ Projects</span>
+          <span>Hackathon Participant</span>
+        </div>
 
         {/* Resume Button */}
         <MagneticButton href="/AnishaResume.pdf">
